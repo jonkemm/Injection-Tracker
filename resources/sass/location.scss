@@ -1,0 +1,173 @@
+
+#location {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#bg-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.site {
+  width: 2rem;
+  position: absolute;
+  border-radius:50%; 
+
+  .comment {
+    display: none;
+    width: 10rem;
+    font-size:1.5rem;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0.5rem;
+    color: #000;
+    border-radius: 1rem;
+    border:1px solis #fff;
+  
+  }
+
+  .comment-reveal{
+    font-size:1.5rem;
+    color: #fff;
+    position: absolute;
+    top:1rem;
+    left: 2rem;
+    display: block;
+  }
+
+  .comment-reveal:hover .comment {
+    display: block;
+  }
+  .count{
+    font-size:1rem;
+    border:1px solid #000;
+    border-radius:50%;
+    width:1.25rem;
+    padding-left: 0.25rem;
+      position:relative;
+      left:-0.25rem;
+    height:1.25rem;  }
+    .count-no{
+      position:relative;
+      top:-0.25rem;
+    }
+}
+.option-hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+.location .submit {
+  width: auto;
+}
+
+.rating {
+  float: left;
+  width: 100%;
+}
+
+.rating-item {
+  width: 25%;
+  display: block;
+  float: left;
+}
+
+.rating.row {
+  padding-left: 1rem;
+}
+
+.rating label, .add-location label {
+  display: block;
+  height: 2rem;
+  float: left;
+  text-align: center;
+}
+
+.rating label {
+  width: 100%;
+}
+
+.add-location label {
+  width: auto;
+}
+
+.rating-item label:active {
+  border: 2px solid white;
+  background-color: $light;
+}
+
+.radioBtns {
+  // visibility: hidden;
+  display: none;
+}
+
+.btn-primary {
+  margin: 1rem auto;
+}
+
+.modal-bg{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  animation-duration: 1s;
+  animation-name: kevin;
+  background-color: $lighter;
+  border-radius: 1rem;
+  position: relative;
+  top: -45rem;
+  width: 90%;
+  margin: 0 5%;
+  border: 1px solid grey;
+}
+
+@keyframes kevin {
+  from {
+    top: 55rem;
+    opacity: 0%;
+  }
+  to {
+    top: -45rem;
+    opacity: 70%;
+  }
+}
+
+
+.rating label {
+  width: 100%;
+  padding-top: 0.25rem;
+}
+
+#modal-container {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.marker-update {
+  font-size: 0.7rem;
+}
+
+.site0{
+    background-color: #198754;
+}
+.site1{
+    background-color: #0dcaf0;
+}
+.site2{
+    background-color: #ffc107;
+}
+.site3{
+    background-color: #dc4535;
+}
+
+.buttons{
+    float: right;
+}
+
+.sites{
+  border-radius:0 0 0.5rem 0.5rem;
+}

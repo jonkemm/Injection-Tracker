@@ -1,0 +1,129 @@
+@import '~bootstrap/scss/bootstrap';
+@import 'variables.scss'; 
+@import 'card.scss';
+@import 'location.scss';
+
+body {
+  font-size: 16px;
+    background-color: $lighter;
+    color: $dark;
+}
+
+h1 { 
+    color:$light;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+} 
+
+h3 {
+  font-size: 1.2rem;
+}
+
+label {
+  margin-left: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 50rem;
+  min-width: 40rem;
+  box-shadow: none !important;
+}
+
+.flex{
+  display: flex;
+}
+
+.float-right{
+  float: right;
+}
+
+header{
+  margin-bottom: 0s;
+  padding: 1rem;
+  box-shadow: 0 2px 4px $shadow;
+  border-radius: 0.5rem 0.5rem 0 0;}
+
+footer{
+  margin-top: 3rem !important;
+}
+
+footer {
+  margin-bottom: 0.25rem;
+  background-color: $lighter;
+  border-radius: 0.5rem;
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    li{
+      margin: 0.5rem;
+      a{
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        color: $dark;
+      }
+    }
+  }
+} 
+ul.get-started{
+  display: flex;
+  list-style: none;
+  gap: 1rem; 
+}
+
+.avatar{
+  width:30px; 
+  border-radius:50%
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+.navbar{
+    background-color: $dark;
+    a{
+        color: $lighter;
+        text-decoration: none;
+        padding: 0.5rem;
+    }
+}
+.sub-nav{
+    margin-bottom: 2rem;
+    background-color: $grey;
+    box-shadow: 0 2px 4px $shadow;
+    border-radius: 0 0 0.5rem 0.5rem;
+    a, a:hover{
+        color:$lighter;
+    }
+}
+
+
+.btn-google {
+    color: $dark;
+    background-color: $lighter;
+    box-shadow: 0 1px 2px 1px $dark;
+}
+.darkmode--activated .btn-google{
+    color: $light;
+    background-color: $dark;
+    box-shadow: 0 1px 2px 1px $light;
+
+}
+
+.darkmode--activated .card, .darkmode--activated .modal{
+  background-color: $dark;
+  color: $lighter;
+  *{
+    color: $lighter;
+  }
+  input[type="text"], input[type="password"], input[type="email"]{
+    background-color: $dark;
+  }
+} 

@@ -1,0 +1,34 @@
+.card {
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px $shadow;
+  padding: 1rem;
+  background-color: $lighter;
+  border-radius: 0.5rem;
+}
+.card-min{ 
+  min-height: 9rem;
+}
+.card-img {
+  width: 6rem;
+  margin-right: 1rem;
+  position: absolute;
+  clip: rect(1rem, 6rem, 6rem, 1rem);
+  border-radius: 50%;
+}
+
+.card-body {
+  padding: 0;
+  min-height: 7rem;
+}
+
+.card-body a {
+  color: grey;
+  float: right;
+  text-decoration: none;
+  min-height: 3em;
+}
+
+.card-text {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0 7rem;
+}
