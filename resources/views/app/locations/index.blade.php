@@ -22,8 +22,8 @@
             </div>
             <div class="card-text">
                 <h3>{{ ucfirst($location->name) }}</h3>
-                @if ($location->updated_at)
-                <div class="marker-update">Last marker added: {{ date('d/m/Y', strtotime($location->updated_at)) }}</div>
+                @if ($location->sites_updated_at <> '0000-00-00 00:00:00')
+                <div class="marker-update">Last marker added: {{ date('d/m/Y', strtotime($location->sites_updated_at)) }}</div>
                 @endif
             </div>
         </div>

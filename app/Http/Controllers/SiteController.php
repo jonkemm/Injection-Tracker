@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use App\Models\Site;
 use App\Models\Note;
+use App\Models\Location;
 use App\Http\Controllers\Controller;
 
 class SiteController extends Controller
@@ -33,12 +34,18 @@ class SiteController extends Controller
         $qty = request('qty') ? request('qty') : $qty = 4;
         // localStorage.setItem("qty", $qty);
         setcookie("qty", $qty, time() + (86400 * 30), "/");
+        $location = request("location");
         $site = new Site ();
-        $site->location = request("location");
+        $site->location = $location;
         $site->rating = request("rating");
         $site->x_coord = request("x_coord");
         $site->y_coord = request("y_coord");
         $site->save();
+
+        $updated = date("Y-m-d H:i:s");
+        $id = request('id');
+        DB::update('update locations set sites_updated_at = ? where id = ?',[$updated,$location]);
+        
         if( request("note"))
         {
             $note = new Note ();

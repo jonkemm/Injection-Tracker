@@ -20,6 +20,7 @@ class CreateLocationTable extends Migration
             $table->foreignId('user')->constrained()->onDelete('cascade');
             $table->string('image');
             $table->string('url');
+            $table->timestamp('sites_updated_at');
         });
     }
 

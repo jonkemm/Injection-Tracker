@@ -16,11 +16,9 @@ class LocationController extends Controller
         $user = Auth::user();
 
         $locations = DB::table('locations')
-        ->select('locations.id', 'locations.name', 'locations.url', 'sites.updated_at')
-        ->leftJoin('sites', 'locations.id', '=', 'sites.location')
+        ->select('locations.id', 'locations.name', 'locations.sites_updated_at', 'locations.url')
         ->where('locations.user', '=', $user->id)
-        ->groupBy('sites.location')
-        ->orderBy('updated_at', 'asc')
+        ->orderBy('sites_updated_at', 'asc')
         ->get();
 
         return view('app.locations.index',['locations'=> $locations ])->with('success', 'Add or choose a location');
