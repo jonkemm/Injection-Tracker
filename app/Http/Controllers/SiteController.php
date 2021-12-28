@@ -17,7 +17,7 @@ class SiteController extends Controller
         // localStorage.setItem("qty", 4);
         setcookie("qty", $qty, time() + (86400 * 30), "/");
         $sites = DB::table('sites')
-        ->select('sites.id as siteid', 'notes.note', 'notes.id AS noteid', 'sites.updated_at','sites.rating', 'sites.x_coord', 'sites.y_coord', 'locations.url', 'locations.id')
+        ->select('sites.id as siteid', 'notes.note', 'notes.id AS noteid', 'sites.updated_at','sites.rating', 'sites.x_coord', 'sites.y_coord', 'locations.url', 'locations.name', 'locations.id')
         ->rightJoin('locations', 'locations.id', '=', 'sites.location')
         ->leftJoin('notes', 'notes.site', '=', 'sites.id')
         ->where([

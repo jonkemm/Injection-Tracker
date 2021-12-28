@@ -1,9 +1,5 @@
-@section('page_title')
-    {{ "Your sites" }}
-@endsection
-@section('breadcrumbs')
-    {{-- {{  }} --}}
-@endsection
+
+
 <x-app-layout>
     <div class="card sites">
     @php
@@ -44,6 +40,12 @@
 @break
 @endforeach
 @foreach ($sites as $site)
+
+
+            @section('page_title')
+    Your sites > {{ ucfirst( $site->name ) }} 
+@endsection
+
             <div 
                 class="site"
                 onclick = "jk({{$site->siteid }},'{{ $site->note }}','{{ $site->noteid }}')"

@@ -11294,11 +11294,11 @@ textarea.form-control-lg {
 }
 
 .card-img {
-  width: 6rem;
+  width: 5rem;
   margin-right: 1rem;
   position: absolute;
-  clip: rect(1rem, 6rem, 6rem, 1rem);
-  border-radius: 50%;
+  border-radius: 0.5rem;
+  border: 2px solid #666;
 }
 
 .card-body {

@@ -19,7 +19,8 @@
                         <li><a href="{{route('login')}}" class="btn btn-info">Login</a></li>
                     </ul>
                     @endauth
-                    <img src="/img/thigh.png" style="width:100%" alt="Injection Tracker logo" >
+                    <img src="/img/thigh-example-front-2.png" style="width:100%" alt="List of injection sites" >
+                    <img src="/img/thigh-example-front.png" style="width:100%" alt="Example location with injection sites" >
                 </div>
                 <div class="col">
                     <h2>What a lovely story</h2>
