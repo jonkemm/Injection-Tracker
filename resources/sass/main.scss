@@ -4,13 +4,12 @@
 @import 'location.scss';
 
 body {
-  font-size: 16px;
     background-color: $lighter;
     color: $dark;
 }
 
 h1 { 
-    color:$light;
+  color:$light;
   font-size: 1.5rem;
 }
 
@@ -29,8 +28,6 @@ label {
 
 .container {
   margin: 0 auto;
-  max-width: 50rem;
-  min-width: 40rem;
   box-shadow: none !important;
 }
 
@@ -48,11 +45,8 @@ header{
   box-shadow: 0 2px 4px $shadow;
   border-radius: 0.5rem 0.5rem 0 0;}
 
-footer{
-  margin-top: 3rem !important;
-}
-
 footer {
+  margin-top: 3rem !important;
   margin-bottom: 0.25rem;
   background-color: $lighter;
   border-radius: 0.5rem;
@@ -79,7 +73,7 @@ ul.get-started{
 }
 
 .avatar{
-  width:30px; 
+  width:2rem; 
   border-radius:50%
 }
 
@@ -94,11 +88,15 @@ ul.get-started{
         padding: 0.5rem;
     }
 }
-.sub-nav{
+.navbar-brand{
+  margin-left: 1rem;
+}
+.subnav{
     margin-bottom: 2rem;
     background-color: $grey;
     box-shadow: 0 2px 4px $shadow;
     border-radius: 0 0 0.5rem 0.5rem;
+    display: block;
     a, a:hover{
         color:$lighter;
     }
@@ -110,6 +108,7 @@ ul.get-started{
     background-color: $lighter;
     box-shadow: 0 1px 2px 1px $dark;
 }
+
 .darkmode--activated .btn-google{
     color: $light;
     background-color: $dark;
