@@ -5,19 +5,17 @@
     @forelse($locations as $location)
     <div class="card card-min">
         <div class="card-body">
-            <a href="{{ route('location',$location->id) }}" style="float: left">
-                <img class="card-img" src="{{ $location->url }}" alt="Card image">
+            <a href="{{ route('location',$location->id) }}" class="card-link"style="float: left">
+                <div class="card-img stretched-link" style="background-image: url('{{ $location->url }}')"></div>
             </a>
             <div class="buttons">
                 <a href="{{ route('location',$location->id) }}">
-                    <button type="submit" style="float: right;" class="btn btn-sm btn-success">view</button>
+                    <button type="submit" style="float: right;" class="btn btn-lg btn-success">view</button>
                 </a>
-                <br /><br />
-                <a href="#" onclick="
-                    document.getElementById('myModal3-form').action='/app/location/{{$location->id}}';
-                    "
+                <br />
+                <a href="#" onclick="document.getElementById('myModal3-form').action='/app/location/{{$location->id}}';"
                     data-toggle="modal" data-target="#myModal3">
-                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    <button type="submit" style="margin-top:1rem" class="btn btn-sm btn-danger">Delete</button>
                 </a>
             </div>
             <div class="card-text">

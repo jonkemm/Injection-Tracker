@@ -33,4 +33,5 @@
 
             </div>
         </nav>
-        <div class="subnav bg-gradient">j</div>
+        <div class="nav-stripe bg-warning"></div>
+        <div class="subnav bg-gradient"></div>

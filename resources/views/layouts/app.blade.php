@@ -7,7 +7,7 @@
         <title>@yield('page_title') | Injection Tracker</title>
         <!-- css stles -->
         <link href="{{ asset('css/main.css') }}" rel="stylesheet" />
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <!-- js -->
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -39,6 +39,8 @@
                 <main>
                     {{ $slot }}
                 </main>
+                <x-footer>
+                </x-footer>
         </div>
     </body>
 </html>

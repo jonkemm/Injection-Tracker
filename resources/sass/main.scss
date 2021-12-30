@@ -40,16 +40,17 @@ label {
 }
 
 header{
-  margin-bottom: 0s;
-  padding: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 4px $shadow;
-  border-radius: 0.5rem 0.5rem 0 0;}
+  border-radius: 0.5rem;
+}
 
 footer {
-  margin-top: 3rem !important;
+  margin-top: 0 !important;
   margin-bottom: 0.25rem;
   background-color: $lighter;
-  border-radius: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
   ul {
     list-style: none;
     display: flex;
@@ -61,7 +62,7 @@ footer {
         text-decoration: none;
         text-align: center;
         display: block;
-        color: $dark;
+        color: $lighter;
       }
     }
   }
@@ -92,16 +93,26 @@ ul.get-started{
   margin-left: 1rem;
 }
 .subnav{
-    margin-bottom: 2rem;
     background-color: $grey;
-    box-shadow: 0 2px 4px $shadow;
     border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 2px 4px $shadow;
     display: block;
+    height: 0.75rem;
+    margin-bottom: 2rem;
+    margin-TOP: 3px solid red !important;
     a, a:hover{
         color:$lighter;
     }
 }
 
+.footer{
+  margin-bottom: 0;
+  border-radius: 0.5rem 0.5rem 0 0
+}
+
+.nav-stripe{
+  height: 0.25rem;
+}
 
 .btn-google {
     color: $dark;

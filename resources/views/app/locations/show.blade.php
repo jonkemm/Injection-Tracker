@@ -1,7 +1,7 @@
 
 
 <x-app-layout>
-    <div class="card sites">
+    <div class="card">
     @php
     if ( $_COOKIE["qty"] )
     { $qty = $_COOKIE["qty"]; }

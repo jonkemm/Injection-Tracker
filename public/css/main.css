@@ -11285,7 +11285,6 @@ textarea.form-control-lg {
   margin-bottom: 1rem;
   box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
   padding: 1rem;
-  background-color: #eee;
   border-radius: 0.5rem;
 }
 
@@ -11293,12 +11292,13 @@ textarea.form-control-lg {
   min-height: 8rem;
 }
 
-w .card-img {
-  width: 5rem;
-  margin-right: 1rem;
-  position: absolute;
+.card-img {
+  background-position: center;
+  background-size: 6rem auto;
+  height: 6rem;
+  width: 6rem;
   border-radius: 0.5rem;
-  border: 2px solid #666;
+  border: 2px solid #999;
 }
 
 .card-body {
@@ -11314,7 +11314,12 @@ w .card-img {
 
 .card-text {
   width: 100%;
-  padding: 0.5rem 0.5rem 0 7rem;
+  padding: 0.5rem 0.5rem 0 8rem;
+}
+
+.img-cont {
+  width: 100%;
+  height: 20rem;
 }
 
 #location {
@@ -11539,17 +11544,17 @@ label {
 }
 
 header {
-  margin-bottom: 0s;
-  padding: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 0.5rem;
 }
 
 footer {
-  margin-top: 3rem !important;
+  margin-top: 0 !important;
   margin-bottom: 0.25rem;
   background-color: #eee;
-  border-radius: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 footer ul {
   list-style: none;
@@ -11564,7 +11569,7 @@ footer ul li a {
   text-decoration: none;
   text-align: center;
   display: block;
-  color: #212121;
+  color: #eee;
 }
 
 ul.get-started {
@@ -11596,14 +11601,25 @@ ul.get-started {
 }
 
 .subnav {
-  margin-bottom: 2rem;
   background-color: #666;
-  box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
   border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
   display: block;
+  height: 0.75rem;
+  margin-bottom: 2rem;
+  margin-TOP: 3px solid red !important;
 }
 .subnav a, .subnav a:hover {
   color: #eee;
+}
+
+.footer {
+  margin-bottom: 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.nav-stripe {
+  height: 0.25rem;
 }
 
 .btn-google {
