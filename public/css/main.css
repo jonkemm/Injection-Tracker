@@ -11281,17 +11281,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.card {
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.card-min {
-  min-height: 8rem;
-}
-
 .card-img {
   background-position: center;
   background-size: 6rem auto;
@@ -11301,25 +11290,23 @@ textarea.form-control-lg {
   border: 2px solid #999;
 }
 
-.card-body {
+.card {
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.card h2, .card .h2 {
+  margin: 0;
+}
+
+.vertical {
+  height: 25rem !important;
+}
+
+.card-body.add-location {
   padding: 0;
-}
-
-.card-body a {
-  color: grey;
-  float: right;
-  text-decoration: none;
-  min-height: 3em;
-}
-
-.card-text {
-  width: 100%;
-  padding: 0.5rem 0.5rem 0 8rem;
-}
-
-.img-cont {
-  width: 100%;
-  height: 20rem;
 }
 
 #location {
@@ -11404,12 +11391,11 @@ textarea.form-control-lg {
 
 .rating label, .add-location label {
   display: block;
-  height: 2rem;
   float: left;
-  text-align: center;
 }
 
 .rating label {
+  height: 2rem;
   width: 100%;
 }
 
@@ -11539,8 +11525,26 @@ label {
   display: flex;
 }
 
+.float-left {
+  float: left;
+}
+
 .float-right {
   float: right;
+}
+
+.row {
+  clear: left;
+  float: left;
+}
+
+.flex-cont {
+  display: flex;
+  width: 100%;
+}
+
+.flex-cont > div > div {
+  margin: 0.5rem;
 }
 
 header {
@@ -11643,4 +11647,8 @@ ul.get-started {
 }
 .darkmode--activated .card input[type=text], .darkmode--activated .card input[type=password], .darkmode--activated .card input[type=email], .darkmode--activated .modal input[type=text], .darkmode--activated .modal input[type=password], .darkmode--activated .modal input[type=email] {
   background-color: #212121;
+}
+
+header, .container, footer, .subnav, .footer, .nav-stripe {
+  clear: left;
 }

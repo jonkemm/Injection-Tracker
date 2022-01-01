@@ -3,26 +3,30 @@
 @endsection
 <x-app-layout>
     @forelse($locations as $location)
-    <div class="card card-min">
-        <div class="card-body">
-            <a href="{{ route('location',$location->id) }}" class="card-link"style="float: left">
-                <div class="card-img stretched-link" style="background-image: url('{{ $location->url }}')"></div>
-            </a>
-            <div class="buttons">
+    <div class="card mb-3 p-3">
+        <div class="row no-gutters">
+            <div class="col-4">
+                <a href="{{ route('location',$location->id) }}" class="card-link"style="float: left">
+                    <div class="card-img stretched-link" style="background-image: url('{{ $location->url }}')"></div>
+                </a>
+            </div>
+            <div class="col-5">
+                <div class="card-body">
+                    <h3>{{ ucfirst($location->name) }}</h3>
+                    @if ($location->sites_updated_at <> '0000-00-00 00:00:00')
+                    <div class="marker-update">Last marker added: {{ date('d/m/Y', strtotime($location->sites_updated_at)) }}</div>
+                    @endif
+                </div>
+            </div>
+            <div class="col-sm-3">
                 <a href="{{ route('location',$location->id) }}">
                     <button type="submit" style="float: right;" class="btn btn-lg btn-success">view</button>
                 </a>
-                <br />
                 <a href="#" onclick="document.getElementById('myModal3-form').action='/app/location/{{$location->id}}';"
-                    data-toggle="modal" data-target="#myModal3">
-                    <button type="submit" style="margin-top:1rem" class="btn btn-sm btn-danger">Delete</button>
+                    data-toggle="modal" data-target="#myModal3"
+                    style="float:right; clear:right;margin-top:0.5rem">
+                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                 </a>
-            </div>
-            <div class="card-text">
-                <h3>{{ ucfirst($location->name) }}</h3>
-                @if ($location->sites_updated_at <> '0000-00-00 00:00:00')
-                <div class="marker-update">Last marker added: {{ date('d/m/Y', strtotime($location->sites_updated_at)) }}</div>
-                @endif
             </div>
         </div>
     </div>
@@ -30,19 +34,28 @@
         <p>No locations added yet.  Add one using the form below to continue</p>
     </div>
     @endforelse
+
+
+
     <div class="card">
         <h2>Add location</h2>
-        <div class="card-body">
+        <div class="card-body add-location">
             <form action="{{ route('upload') }}" class="location" method="post" enctype="multipart/form-data">
                 @csrf
-                <div class="row add-location">
-                    <label for="name">Name
-                        <input type="text" size="9" required name="name" id="name" placeholder="right leg" >
-                    </label>
-                    <label for="image">Image
-                        <input type="file" required style="width: 100px" id="image" name="image">
-                    </label>
-                    <button type="submit" class="btn btn-success submit">Upload</button>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="name">Name
+                            <input type="text" required name="name" id="name" placeholder="right leg" >
+                        </label>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="image">Image
+                            <input type="file" required id="image" name="image">
+                        </label>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-success submit float-right">Upload</button>
+                    </div>
                 </div>
             </form>
         </div>

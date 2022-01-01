@@ -1,3 +1,5 @@
+You are receiving this email because we received a password reset request for your account.
+
 @section('page_title')
     {{ "Verify email" }}
 @endsection
