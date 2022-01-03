@@ -1,0 +1,18 @@
+
+.darkmode--activated .btn-google{
+    color: $light;
+    background-color: $dark;
+    box-shadow: 0 1px 2px 1px $light;
+
+}
+
+.darkmode--activated .card, .darkmode--activated .modal{
+  background-color: $dark;
+  color: $lighter;
+  *{
+    color: $lighter;
+  }
+  input[type="text"], input[type="password"], input[type="email"]{
+    background-color: $dark;
+  }
+} 

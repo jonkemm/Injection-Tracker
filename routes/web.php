@@ -33,6 +33,7 @@ Route::get('/', function () {return view('front.index');})->name('home');
 Route::get('/about/howto', function () {return view('front.howto');})->name('howto');
 Route::get('/about/features', function () {return view('front.features');})->name('features');
 Route::get('/about/contact', function () {return view('front.contact');})->name('contact');
+Route::get('/about/pricing', function () {return view('front.pricing');})->name('pricing');
 
 Route::get('/about/contact', [ContactController::class, 'show'])->name('contact');
 Route::post('/about/contact', [ContactController::class, 'mailContactForm']);
