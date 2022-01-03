@@ -1,66 +1,54 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://injection-tracker.com" target="_blank"><img src="https://github.com/jonkemm/Injection-tracker/blob/master/public/img/logo-png.png" width="200"><br />
+Injection Tracker</a></p>
 
+## About Injection Tracker
+
+Injection tracker is a web application to help those of us using injections to help control an illness. Injection tracker was created by it's programmer Jono to store photos of body parts and keep track of injections into those parts, be it subcontaiinously (into fatty layer just under the skin) or deeper into muscle. Jono used it with his Multiple Sclerosis but hopes it will be used by people with other illnesses.  
+It has features such as:
+
+- Built safe & secure using a Laravel framework
+- Simple, easy to use UI
+- Social login [1]
+- Practice image loaded in for each new user
+- Images stored with AWS [2]
+
+[1] Only for Google, I was also going to add Facebook, possibly Apple & Microsoft but they are pigs to impliment [2] i'd like to store them in the browser.
+
+## Screenshots
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<img src="https://github.com/jonkemm/Injection-tracker/blob/master/public/img/thigh-front-2.png" width="400">
+    ,br>Add / choose location of injecton on your body
+<img src="https://github.com/jonkemm/Injection-tracker/blob/master/public/img/thigh-front.png" width="400">
+    <br>Add injections to the locations and rate them
 </p>
 
-## About Laravel
+## Technologies
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Bootstrap 5
+- Font Awesome 4
+- Laravel 8
+- PHP 8
+- JQuery
+- AWS S32
+- SASS
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Some installation instructions
+(not all of them but enough to help out...)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+```
+composer require league/flysystem-aws-s3-v3 ^1.0.29
+composer require laravel/breeze --dev
+php artisan breeze:install
+npm install
+npm run dev
+php artisan migrate
+php artisan db:seed
+```
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Future plans
+* Even though images uploaded to AWS are given a unique filename, for increased privacy I'd like to store them in Local Storage in the browser
+* I'd like to tidy up the javascript and bring it all together in the js file.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Injection tracker is released as open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
