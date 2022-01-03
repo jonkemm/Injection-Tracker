@@ -30,13 +30,19 @@
             data-target="#myModal3" role="button">Delete location</a> 
         </div>
     </div>
-    <div id="location">
+    <div id="location" class="table-responsive">
         <div class="alert alert-success" 
             style="position:absolute; z-index:10"
             onclick="this.style='display:none'"
         >Double click to add a site</div>
 @foreach ($sites as $site)
-        <img src="{{$site->url}}" alt="Pic" id="bg-img" onclick = fill() />
+        <table class="table">
+            <tr>
+                <td>
+                    <img src="{{$site->url}}" alt="Pic" id="bg-img" onclick = fill() />
+                </td>
+            </tr>
+        </table>
 @break
 @endforeach
 @foreach ($sites as $site)
