@@ -17,9 +17,7 @@ It has features such as:
 ## Screenshots
 <p align="center">
 <img src="https://github.com/jonkemm/Injection-tracker/blob/master/public/img/thigh-front-2.png" width="400">
-    <br><br><br> Add / choose location of injecton on your body
 <img src="https://github.com/jonkemm/Injection-tracker/blob/master/public/img/thigh-front.png" width="400">
-    <br><br><br> Add injections to the locations and rate them
 </p>
 
 ## Technologies
