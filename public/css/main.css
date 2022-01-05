@@ -11281,6 +11281,18 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.card {
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+.card h2, .card .h2 {
+  margin: 0;
+}
+
 .card-img {
   background-position: center;
   background-size: 6rem auto;
@@ -11288,17 +11300,6 @@ textarea.form-control-lg {
   width: 6rem;
   border-radius: 0.5rem;
   border: 2px solid #999;
-}
-
-.card {
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.card h2, .card .h2 {
-  margin: 0;
 }
 
 .vertical {
@@ -11498,15 +11499,20 @@ textarea.form-control-lg {
   box-shadow: 0 1px 2px 1px #999;
 }
 
-.darkmode--activated .card, .darkmode--activated .modal {
+.darkmode--activated .card, .darkmode--activated .modal, .darkmode--activated .nav {
   background-color: #212121;
   color: #eee;
 }
-.darkmode--activated .card *, .darkmode--activated .modal * {
+.darkmode--activated .card *, .darkmode--activated .modal *, .darkmode--activated .nav * {
   color: #eee;
 }
-.darkmode--activated .card input[type=text], .darkmode--activated .card input[type=password], .darkmode--activated .card input[type=email], .darkmode--activated .modal input[type=text], .darkmode--activated .modal input[type=password], .darkmode--activated .modal input[type=email] {
+.darkmode--activated .card input[type=text], .darkmode--activated .card input[type=password], .darkmode--activated .card input[type=email], .darkmode--activated .modal input[type=text], .darkmode--activated .modal input[type=password], .darkmode--activated .modal input[type=email], .darkmode--activated .nav input[type=text], .darkmode--activated .nav input[type=password], .darkmode--activated .nav input[type=email] {
   background-color: #212121;
+}
+
+.darkmode-toggle {
+  background-image: url("/img/dark-mode.png");
+  background-size: 75px;
 }
 
 label {

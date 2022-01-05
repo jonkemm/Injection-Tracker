@@ -4,22 +4,18 @@
 
 <div class="container">
     <x-guest-layout>
-        <div class="row flex">
-            <div class="card w-50">
-                Would you like to:
-                <a href="{{ route('logout') }}" class="btn btn-sm btn-info" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                    Logout
-                </a>
-            </div>
-            <div class="card w-50">
-                Or:
-                <form id="logout-form" action="{{ route('logout') }}" method="post" style="display:none">
-                    @csrf
-                </form>
-                <a href="#" class="btn btn-sm btn-danger" onclick="event.preventDefault(); document.getElementById('myModal').style='display:block';">
-                    Delete your account
-                </a>
-            </div>
+        <div class="card">
+            <label for="logout">Would you like to:</label>
+            <a href="{{ route('logout') }}" id="logout" class="btn btn-sm btn-info" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                Logout
+            </a>
+            <label for="delete">Or:</label>
+            <form id="logout-form" action="{{ route('logout') }}" method="post" style="display:none">
+                @csrf
+            </form>
+            <a href="#" class="btn btn-sm btn-danger" id="delete" onclick="event.preventDefault(); document.getElementById('myModal').style='display:block';">
+                Delete your account
+            </a>
         </div>
         <div class="modal" id="myModal">
             <div class="modal-header">

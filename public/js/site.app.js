@@ -21,3 +21,12 @@ function jk(site, text, noteid) {
   }
   document.getElementById('myModal2').style = 'display:block;';
 }
+
+function showPwd() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}

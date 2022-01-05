@@ -17,12 +17,10 @@ You are receiving this email because we received a password reset request for yo
         @endif
 s
             <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-6"></div>
+                    <div class="col-6"></div>
                     <div class="col-sm-6">
                         <button type="submit" class="btn btn-primary float-right">Resend verification</button> email
                     </div>
-                </div>
             </div>
             </form>
 

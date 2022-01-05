@@ -5,12 +5,12 @@
     @forelse($locations as $location)
     <div class="card mb-3 p-3">
         <div class="row no-gutters">
-            <div class="col-4">
+            <div class="col-sm-4">
                 <a href="{{ route('location',$location->id) }}" class="card-link"style="float: left">
                     <div class="card-img stretched-link" style="background-image: url('{{ $location->url }}')"></div>
                 </a>
             </div>
-            <div class="col-5">
+            <div class="col-sm-5">
                 <div class="card-body">
                     <h3>{{ ucfirst($location->name) }}</h3>
                     @if ($location->sites_updated_at <> '0000-00-00 00:00:00')
@@ -50,11 +50,13 @@
                     </div>
                     <div class="col-sm-4">
                         <label for="image">Image
-                            <input type="file" required id="image" name="image">
+                            <input type="file" style="width:120px;" required id="image" name="image">
                         </label>
                     </div>
                     <div class="col-sm-4">
+                        <label>
                         <button type="submit" class="btn btn-success submit float-right">Upload</button>
+                        </label>
                     </div>
                 </div>
             </form>

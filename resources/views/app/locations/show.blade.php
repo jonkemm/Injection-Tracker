@@ -6,11 +6,8 @@
     if ( $_COOKIE["qty"] )
     { $qty = $_COOKIE["qty"]; }
     else 
-    { 
-        if ( request('qty') )
-        { $qty = request('qty'); }
-        else 
-        { $qty = 4; }
+    {
+        $qty = 4;
     };
     @endphp
     <div class="row">
@@ -20,6 +17,7 @@
                     View
                     <input type="number" size="2" style="width:2rem" min="4" value="@php echo $qty @endphp" max="31" step="1" name="qty" id="qty_menu" />
                     <button type="submit" class="btn btn-sm btn-success" name="submit" value="submit" id="">Go</button>
+                </label>
             </form>
         </div>
         <div class="col">
@@ -36,13 +34,9 @@
             onclick="this.style='display:none'"
         >Double click to add a site</div>
 @foreach ($sites as $site)
-        <table class="table">
-            <tr>
-                <td>
-                    <img src="{{$site->url}}" alt="Pic" id="bg-img" onclick = fill() />
-                </td>
-            </tr>
-        </table>
+            <div class="table">
+                <img src="{{$site->url}}" alt="Pic" id="bg-img" onclick = fill() />
+            </div>
 @break
 @endforeach
 @foreach ($sites as $site)
