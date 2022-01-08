@@ -29,10 +29,17 @@ h3 {
 }
 
 header{
+  padding: 0;
+}
+
+main{
   margin-bottom: 1rem;
-  padding: 0.5rem;
   box-shadow: 0 2px 4px $shadow;
+  padding: 1rem;
   border-radius: 0.5rem;
+  background-color: transparent;
+  float: left;
+  width: 100%;
 }
 
 footer {

@@ -1,11 +1,11 @@
-@section('page_title')
-    {{ "Forgot password" }}
-@endsection
+@section("page_title","Forgot password")
+@section("page_keywords","forgot password, forgot, password")
+@section("page_desc","Forgotten you password? Enter your email address below and we will email you a password reset link that will allow you to choose a new password. No dramas.")
 <x-guest-layout>
     <div class="card">
         <!-- Session Status -->
         <x-auth-session-status :status="session('status')" />
-        <p>Enter your email address below and we will email you a password reset link that will allow you to choose a new password. No dramas.</p>
+        <p>@yield('page_desc')</p>
         <form method="POST" action="{{ route('password.email') }}">
             @csrf
             <div class="mb-3">

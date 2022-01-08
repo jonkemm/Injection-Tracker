@@ -66,8 +66,8 @@ ul.get-started{
     box-shadow: 0 2px 4px $shadow;
     display: block;
     height: 0.75rem;
-    margin-bottom: 2rem;
-    margin-TOP: 3px solid red !important;
+    margin-bottom: 0;
+    margin-top: 3px solid red !important;
     a, a:hover{
         color:$lighter;
     }
@@ -86,4 +86,31 @@ ul.get-started{
     color: $dark;
     background-color: $lighter;
     box-shadow: 0 1px 2px 1px $dark;
+}
+
+.email {
+    position: relative;
+    width: 100%
+}
+
+.email input {
+    height: 45px;
+    border: none;
+    width: 100%;
+    padding-left: 34px;
+    padding-right: 10px;
+    border-right: 2px solid #eee
+}
+
+.email i {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    font-size: 24px;
+    color: #eee
+}
+
+.breadcrumb{
+  padding: 0.5rem;
+  font-size:0.75rem;
 }

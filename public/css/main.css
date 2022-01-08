@@ -11416,53 +11416,13 @@ textarea.form-control-lg {
   margin: 1rem auto;
 }
 
-.modal-bg {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 .modal {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: kevin;
-          animation-name: kevin;
-  background-color: #eee;
-  border-radius: 1rem;
-  position: relative;
-  top: -45rem;
-  width: 90%;
-  margin: 0 5%;
-  border: 1px solid grey;
+  background-color: rgba(50, 50, 50, 0.7);
 }
 
-@-webkit-keyframes kevin {
-  from {
-    top: 55rem;
-    opacity: 0%;
-  }
-  to {
-    top: -45rem;
-    opacity: 70%;
-  }
-}
-
-@keyframes kevin {
-  from {
-    top: 55rem;
-    opacity: 0%;
-  }
-  to {
-    top: -45rem;
-    opacity: 70%;
-  }
-}
 .rating label {
   width: 100%;
   padding-top: 0.25rem;
-}
-
-#modal-container {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .marker-update {
@@ -11499,14 +11459,14 @@ textarea.form-control-lg {
   box-shadow: 0 1px 2px 1px #999;
 }
 
-.darkmode--activated .card, .darkmode--activated .modal, .darkmode--activated .nav {
+.darkmode--activated .card, .darkmode--activated .modal-content, .darkmode--activated .nav {
   background-color: #212121;
   color: #eee;
 }
-.darkmode--activated .card *, .darkmode--activated .modal *, .darkmode--activated .nav * {
+.darkmode--activated .card *, .darkmode--activated .modal-content *, .darkmode--activated .nav * {
   color: #eee;
 }
-.darkmode--activated .card input[type=text], .darkmode--activated .card input[type=password], .darkmode--activated .card input[type=email], .darkmode--activated .modal input[type=text], .darkmode--activated .modal input[type=password], .darkmode--activated .modal input[type=email], .darkmode--activated .nav input[type=text], .darkmode--activated .nav input[type=password], .darkmode--activated .nav input[type=email] {
+.darkmode--activated .card input[type=text], .darkmode--activated .card input[type=password], .darkmode--activated .card input[type=email], .darkmode--activated .modal-content input[type=text], .darkmode--activated .modal-content input[type=password], .darkmode--activated .modal-content input[type=email], .darkmode--activated .nav input[type=text], .darkmode--activated .nav input[type=password], .darkmode--activated .nav input[type=email] {
   background-color: #212121;
 }
 
@@ -11584,8 +11544,8 @@ ul.get-started {
   box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
   display: block;
   height: 0.75rem;
-  margin-bottom: 2rem;
-  margin-TOP: 3px solid red !important;
+  margin-bottom: 0;
+  margin-top: 3px solid red !important;
 }
 .subnav a, .subnav a:hover {
   color: #eee;
@@ -11604,6 +11564,33 @@ ul.get-started {
   color: #212121;
   background-color: #eee;
   box-shadow: 0 1px 2px 1px #212121;
+}
+
+.email {
+  position: relative;
+  width: 100%;
+}
+
+.email input {
+  height: 45px;
+  border: none;
+  width: 100%;
+  padding-left: 34px;
+  padding-right: 10px;
+  border-right: 2px solid #eee;
+}
+
+.email i {
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  font-size: 24px;
+  color: #eee;
+}
+
+.breadcrumb {
+  padding: 0.5rem;
+  font-size: 0.75rem;
 }
 
 body {
@@ -11626,10 +11613,17 @@ h3, .h3 {
 }
 
 header {
+  padding: 0;
+}
+
+main {
   margin-bottom: 1rem;
-  padding: 0.5rem;
   box-shadow: 0 2px 4px rgba(32, 32, 32, 0.5);
+  padding: 1rem;
   border-radius: 0.5rem;
+  background-color: transparent;
+  float: left;
+  width: 100%;
 }
 
 footer {

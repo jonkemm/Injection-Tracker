@@ -108,42 +108,37 @@
   margin: 1rem auto;
 }
 
-.modal-bg{
-  display: none;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 .modal {
-  animation-duration: 1s;
-  animation-name: kevin;
-  background-color: $lighter;
-  border-radius: 1rem;
-  position: relative;
-  top: -45rem;
-  width: 90%;
-  margin: 0 5%;
-  border: 1px solid grey;
+  background-color: rgba(50, 50, 50, 0.7);
 }
 
-@keyframes kevin {
-  from {
-    top: 55rem;
-    opacity: 0%;
-  }
-  to {
-    top: -45rem;
-    opacity: 70%;
-  }
-}
+// .modal-body {
+  // animation-duration: 1s;
+  // animation-name: kevin;
+  // background-color: $lighter;
+  // border-radius: 1rem;
+  // position: relative;
+  // top: -45rem;
+  // width: 90%;
+  // margin: 0 5%;
+  // border: 1px solid grey;
+// }
+
+// @keyframes kevin {
+//   from {
+//     top: 55rem;
+//     opacity: 0%;
+//   }
+//   to {
+//     top: -45rem;
+//     opacity: 70%;
+//   }
+// }
 
 
 .rating label {
   width: 100%;
   padding-top: 0.25rem;
-}
-
-#modal-container {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .marker-update {

@@ -2,17 +2,13 @@
 @endsection @section('page_desc'){{ "Injection tracker is for those of us who wish to track their injections and rate the 'experience' for each one. The idea is that over time you can get a better idea of where your (extra) sore bits are." }}@endsection
 @section('page_keywords'){{"injection, tracking, avonex, copaxone, rebif"}}@endsection
 
-<div class="container">
-    <x-guest-layout>
-        <div class="card">
+<x-guest-layout>
             <div class="row align-items-start">
                 <div class="col">
                     <p>@yield('page_desc')</p>
                     <p>Let's go!</p>
                     @auth
-                    <p>
-                        <a href="{{ route('locations') }} "  class="btn btn-success">View your locations</a>
-                    </p>
+                    <p><a href="{{ route('locations') }} "  class="btn btn-success">View your locations</a></p>
                     @else
                     <ul class="get-started">
                         <li><a href="{{route('register')}}" id="my_button" class="btn btn-success">Register</a></li>
@@ -28,6 +24,4 @@
                     <p>The first version was built back in 2015, </p>
                 </div>
             </div>
-        </div>
-    </x-guest-layout>
-</div>
+</x-guest-layout>

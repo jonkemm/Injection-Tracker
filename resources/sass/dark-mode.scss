@@ -6,7 +6,7 @@
 
 }
 
-.darkmode--activated .card, .darkmode--activated .modal, .darkmode--activated .nav{
+.darkmode--activated .card, .darkmode--activated .modal-content, .darkmode--activated .nav{
   background-color: $dark;
   color: $lighter;
   *{

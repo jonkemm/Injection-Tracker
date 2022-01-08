@@ -2,12 +2,12 @@
     {{ "Locations" }}
 @endsection
 <x-app-layout>
-    @forelse($locations as $location)
+@forelse($locations as $location)
     <div class="card mb-3 p-3">
         <div class="row no-gutters">
             <div class="col-sm-4">
                 <a href="{{ route('location',$location->id) }}" class="card-link"style="float: left">
-                    <div class="card-img stretched-link" style="background-image: url('{{ $location->url }}')"></div>
+                    <div class="card-img" style="background-image: url('{{ $location->url }}')"></div>
                 </a>
             </div>
             <div class="col-sm-5">
@@ -22,18 +22,18 @@
                 <a href="{{ route('location',$location->id) }}">
                     <button type="submit" style="float: right;" class="btn btn-lg btn-success">view</button>
                 </a>
-                <a href="#" onclick="document.getElementById('myModal3-form').action='/app/location/{{$location->id}}';"
-                    data-toggle="modal" data-target="#myModal3"
+                <a href="#" 
+                onclick="document.getElementById('myModal3').action='/app/location/{{$location->id}}';document.getElementById('myModal3-div').style='display:block';"
+                    data-toggle="modal" data-target="#myModal3-div"
                     style="float:right; clear:right;margin-top:0.5rem">
                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                 </a>
             </div>
         </div>
     </div>
-    @empty
+@empty
         <p>No locations added yet.  Add one using the form below to continue</p>
-    </div>
-    @endforelse
+@endforelse
 
 
 
@@ -65,23 +65,27 @@
 
 
     @if( isset($location) )
-        <div class="modal" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <form action="" method="post" id="myModal3-form">
+        <div class="modal" id="myModal3-div" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <form action="" method="post" id="myModal3">
                 @csrf
-                @method('DELETE')
-                <div class="modal-header">
-                    <h2>Don't want this location?</h2>
-                </div>
-                <div class="modal-body">
-                    <p>If you've finished with this location you can delete it and all of it's markers.  Please note that this cannot be undone.</p>                        
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-danger">Delete location</button>
-                    <button type="button" class="btn btn-secondary"
-                    onclick="document.getElementById('myModal3').style='display:none';"
-                    data-dismiss="modal">
-                        Close</button>
-                    <input type="hidden" name="location" id="location" value="{{$location->id}}">
+                @method('DELETE')        
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Don't want this location?</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>If you've finished with this location you can delete it and all of it's markers.  Please note that this cannot be undone.</p>                        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-danger">Delete location</button>
+                            <button type="button" class="btn btn-secondary"
+                            onclick="document.getElementById('myModal3-div').style='display:none';"
+                            data-dismiss="modal">
+                                Close</button>
+                            <input type="hidden" name="location" id="location" value="{{$location->id}}">
+                        </div>
+                    </div>
                 </div>
             </form> 
         </div>
