@@ -13,7 +13,9 @@
                     </div>
 @auth
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link btn btn-warning btn-sm text-primary" href="{{ route('locations') }}">Locations</a>
+                    <a href="{{ route('locations') }}">
+                        <button type="button" class="btn btn-sm btn-warning">Locations</button>
+                    </a>
                 </div>
 @endauth
                 </div>

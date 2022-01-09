@@ -11366,46 +11366,35 @@ textarea.form-control-lg {
   display: none;
 }
 
-.show {
-  display: block;
-}
-
-.location .submit {
-  width: auto;
-}
-
 .rating {
   float: left;
   width: 100%;
+  padding-left: 1rem;
 }
-
-.rating-item {
+.rating label {
+  display: block;
+  float: left;
+  height: 2rem;
+  width: 100%;
+  margin: 0.25rem;
+  text-align: center;
+}
+.rating .item {
   width: 25%;
   display: block;
   float: left;
 }
-
-.rating.row {
-  padding-left: 1rem;
+.rating .item label:active {
+  border: 5px solid white;
+  padding-top: 0;
+}
+.rating .item label {
+  margin: 0.25rem 0;
+  padding-top: 0.25rem;
 }
 
-.rating label, .add-location label {
-  display: block;
-  float: left;
-}
-
-.rating label {
-  height: 2rem;
-  width: 100%;
-}
-
-.add-location label {
-  width: auto;
-}
-
-.rating-item label:active {
-  border: 2px solid white;
-  background-color: #999;
+.add-location .row {
+  width: 100% !important;
 }
 
 .radioBtns {
@@ -11418,11 +11407,6 @@ textarea.form-control-lg {
 
 .modal {
   background-color: rgba(50, 50, 50, 0.7);
-}
-
-.rating label {
-  width: 100%;
-  padding-top: 0.25rem;
 }
 
 .marker-update {
@@ -11443,14 +11427,6 @@ textarea.form-control-lg {
 
 .site3 {
   background-color: #dc4535;
-}
-
-.buttons {
-  float: right;
-}
-
-.sites {
-  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .darkmode--activated .btn-google {
@@ -11508,12 +11484,6 @@ label {
 
 .flex-cont > div > div {
   margin: 0.5rem;
-}
-
-ul.get-started {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
 }
 
 .avatar {
@@ -11593,6 +11563,21 @@ ul.get-started {
   font-size: 0.75rem;
 }
 
+@media (max-width: 600px) {
+  .container {
+    padding: 0.25rem;
+    border: 0;
+  }
+
+  main, .card * {
+    padding: 0.25rem !important;
+  }
+
+  .card {
+    height: auto !important;
+    padding: 0.5rem;
+  }
+}
 body {
   background-color: #eee;
   color: #212121;

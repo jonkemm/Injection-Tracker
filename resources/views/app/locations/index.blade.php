@@ -4,7 +4,7 @@
 <x-app-layout>
 @forelse($locations as $location)
     <div class="card mb-3 p-3">
-        <div class="row no-gutters">
+        <div class="row">
             <div class="col-sm-4">
                 <a href="{{ route('location',$location->id) }}" class="card-link"style="float: left">
                     <div class="card-img" style="background-image: url('{{ $location->url }}')"></div>
@@ -37,30 +37,26 @@
 
 
 
-    <div class="card">
-        <h2>Add location</h2>
-        <div class="card-body add-location">
-            <form action="{{ route('upload') }}" class="location" method="post" enctype="multipart/form-data">
-                @csrf
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label for="name">Name
-                            <input type="text" required name="name" id="name" placeholder="right leg" >
-                        </label>
-                    </div>
-                    <div class="col-sm-4">
-                        <label for="image">Image
-                            <input type="file" style="width:120px;" required id="image" name="image">
-                        </label>
-                    </div>
-                    <div class="col-sm-4">
-                        <label>
-                        <button type="submit" class="btn btn-success submit float-right">Upload</button>
-                        </label>
-                    </div>
+    <h2>Add location</h2>
+    <div class="add-location">
+        <form action="{{ route('upload') }}" class="location" method="post" enctype="multipart/form-data">
+            @csrf
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="name">Name
+                        <input type="text" required name="name" id="name" placeholder="right leg" >
+                    </label>
                 </div>
-            </form>
-        </div>
+                <div class="col-sm-4">
+                    <label for="image">Image
+                        <input type="file" style="width:120px;" required id="image" name="image">
+                    </label>
+                </div>
+                <div class="col-sm-2">
+                    <button type="submit" class="btn btn-success float-right">Upload</button>
+                </div>
+            </div>
+        </form>
     </div>
 
 

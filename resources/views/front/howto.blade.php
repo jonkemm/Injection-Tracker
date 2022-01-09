@@ -16,7 +16,7 @@
                     </div>
                     <div class="col-6">
                         <div class="card vertical">
-                            <img class="card-img-top" src="/img/list-of-locations.png" alt="List of location screens">
+                            <img class="card-img-top" src="/img/list-example.png" alt="List of location screens">
                             <div class="card-body">
                                 <h3>Add a location</h3>
                                 <p>In the locations section, name the location of your first image (e.g. Right Leg) and upload the image.</p>
@@ -27,7 +27,7 @@
                 <div class="row flex">
                     <div class="col-sm-6">
                         <div class="card vertical">
-                            <img class="card-img-top" src="/img/sites.png" alt="List of location screens">
+                            <img class="card-img-top" src="/img/thigh-front.png" alt="List of location screens">
                             <div class="card-body">
                                 <h3>Record injections</h3>
                                 <p>Choose the location you created and inject yourself, double click on the image in the place where you injected, rate the pain and add the site.</p>

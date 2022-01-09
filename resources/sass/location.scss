@@ -10,6 +10,10 @@
   border-radius: 1rem;
 }
 
+// .sites{
+//   border-radius:0 0 0.5rem 0.5rem;
+// }
+
 .site {
   width: 2rem;
   position: absolute;
@@ -54,49 +58,42 @@
       top:-0.25rem;
     }
 }
+
+// end site
+
 .option-hide{
   display: none;
 }
-.show{
-  display: block;
-}
 
-.location .submit {
-  width: auto;
-}
-
-.rating {
+.rating{
   float: left;
   width: 100%;
-}
-
-.rating-item {
-  width: 25%;
-  display: block;
-  float: left;
-}
-
-.rating.row {
   padding-left: 1rem;
+  label {
+    display: block;
+    float: left;
+    height: 2rem;
+    width: 100%;
+    margin: 0.25rem;
+    text-align: center;
+  }
+  .item {
+    width: 25%;
+    display: block;
+    float: left;
+    label:active {
+      border: 5px solid white;
+      padding-top: 0;
+    }
+    label {
+      margin: 0.25rem 0;
+      padding-top: 0.25rem;
+    }
+  }
 }
 
-.rating label, .add-location label {
-  display: block;
-  float: left;
-}
-
-.rating label {
-  height: 2rem;
-  width: 100%;
-}
-
-.add-location label {
-  width: auto;
-}
-
-.rating-item label:active {
-  border: 2px solid white;
-  background-color: $light;
+.add-location .row{
+  width: 100% !important;
 }
 
 .radioBtns {
@@ -110,35 +107,6 @@
 
 .modal {
   background-color: rgba(50, 50, 50, 0.7);
-}
-
-// .modal-body {
-  // animation-duration: 1s;
-  // animation-name: kevin;
-  // background-color: $lighter;
-  // border-radius: 1rem;
-  // position: relative;
-  // top: -45rem;
-  // width: 90%;
-  // margin: 0 5%;
-  // border: 1px solid grey;
-// }
-
-// @keyframes kevin {
-//   from {
-//     top: 55rem;
-//     opacity: 0%;
-//   }
-//   to {
-//     top: -45rem;
-//     opacity: 70%;
-//   }
-// }
-
-
-.rating label {
-  width: 100%;
-  padding-top: 0.25rem;
 }
 
 .marker-update {
@@ -156,12 +124,4 @@
 }
 .site3{
     background-color: #dc4535;
-}
-
-.buttons{
-    float: right;
-}
-
-.sites{
-  border-radius:0 0 0.5rem 0.5rem;
 }

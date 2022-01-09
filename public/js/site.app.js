@@ -20,6 +20,7 @@ function jk(site, text, noteid) {
     document["form-create"].action = '/app/note/create/' + site;
   }
   document.getElementById('myModal2').style = 'display:block;';
+  document["delete"].action = '/app/site/' + site;
 }
 
 function showPwd() {

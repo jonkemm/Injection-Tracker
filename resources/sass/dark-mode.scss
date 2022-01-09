@@ -15,7 +15,9 @@
   input[type="text"], input[type="password"], input[type="email"]{
     background-color: $dark;
   }
-} 
+
+}
+
 .darkmode-toggle{
   background-image: url('/img/dark-mode.png');
   background-size: 75px;

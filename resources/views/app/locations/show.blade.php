@@ -82,12 +82,12 @@ else
                         <h2>Rate your experience</h2>
                     </div>
                     <div class="modal-body">
-                        1 = okish, 4 = rubbish
+                        okish <span class="float-right">rubbish</span>
                         <div class="rating row">
-                            <div class="rating-item btn-success"><label for="rating0">1</label></div>
-                            <div class="rating-item btn-info"><label for="rating1">2</label></div>
-                            <div class="rating-item btn-warning"><label for="rating2">3</label></div>
-                            <div class="rating-item btn-danger"><label for="rating3">4</label></div>
+                            <div class="item btn-success"><label for="rating0">1</label></div>
+                            <div class="item btn-info"><label for="rating1">2</label></div>
+                            <div class="item btn-warning"><label for="rating2">3</label></div>
+                            <div class="item btn-danger"><label for="rating3">4</label></div>
                         </div>
                         <hr>
                         <div class="radioBtns">
