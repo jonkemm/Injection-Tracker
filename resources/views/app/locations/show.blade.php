@@ -25,10 +25,7 @@ else
                 <a href="#" 
                 class="btn btn-sm btn-danger float-right"
                 data-toggle="modal" 
-                data-target="#myModal3" role="button">Delete location</a> 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
-                Launch demo modal
-                </button>
+                data-target="#myModal3" role="button">Delete location</a>
             </div>
         </div>
 
