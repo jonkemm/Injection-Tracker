@@ -23,13 +23,17 @@ else
             </div>
             <div class="col-4">
                 <a href="#" 
-                onclick="document.getElementById('myModal3').style='display:block';"
                 class="btn btn-sm btn-danger float-right"
                 data-toggle="modal" 
                 data-target="#myModal3" role="button">Delete location</a> 
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+                Launch demo modal
+                </button>
             </div>
         </div>
-<!-- location -->
+
+
+        <!-- location -->
         <div id="location" class="table-responsive">
             <div class="alert alert-success" 
                 style="position:absolute; z-index:10"
@@ -37,7 +41,7 @@ else
             >Double click to add a site</div>
     @foreach ($sites as $site)
                 <div class="table">
-                    <img src="{{$site->url}}" alt="Pic" id="bg-img" onclick = fill() />
+                    <img src="{{$site->url}}" alt="Pic" id="bg-img" />
                 </div>
     @break
     @endforeach
@@ -51,6 +55,7 @@ else
             <div 
                 class="site"
                 onclick = "jk({{$site->siteid }},'{{ $site->note }}','{{ $site->noteid }}')"
+                data-toggle="modal" data-target="#myModal2"
                 style="left:{{$site->x_coord-4}}px; top:{{$site->y_coord-45}}px;"
                 id="location{{$loop->index}}">
                 <img src="/img/logo.svg" alt="{{$site->updated_at}}">
@@ -110,11 +115,7 @@ else
                     </div>    
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-danger" >Rate &amp; Save</button>
-                        <button type="button" class="btn btn-secondary"
-                            onclick="document.getElementById('myModal').style='display:none';"
-                            data-dismiss="modal">
-                            Close
-                        </button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -168,10 +169,7 @@ else
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"
-                        onclick="document.getElementById('myModal2').style='display:none';"
-                        data-dismiss="modal"
-                        >Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -191,10 +189,7 @@ else
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-danger">Delete location</button>
-                        <button type="button" class="btn btn-secondary"
-                        onclick="document.getElementById('myModal3').style='display:none';"
-                        data-dismiss="modal">
-                            Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <input type="hidden" name="location" id="location" value="{{$site->id}}">
                     </div>
                 </div>

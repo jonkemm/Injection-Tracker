@@ -18,9 +18,9 @@
                 </div>
                 <div class="col">
                     <div class="card vertical">
-                        <img class="card-img-top" src="/img/account.png" alt="Account icon">
+                        <img class="card-img-top" src="/img/front/account.png" alt="Account icon">
                         <div class="card-body">
-                            <h3>Sign up</h3>
+                            <h3>1) Sign up</h3>
                             <p>Register with / log into the site or login with Google</p>
                             <p><a href="{{ route('register') }}" class="btn btn-primary" role="button">Register</a> <a href="{{ route('login') }}" class="btn btn-default" role="button">Login</a></p>
                         </div>
@@ -28,18 +28,18 @@
                 </div>
                 <div class="col">
                     <div class="card vertical">
-                        <img class="card-img-top" src="/img/list-example.png" alt="List of location screens">
+                        <img class="card-img-top" src="/img/front/list-example.png" alt="List of location screens">
                         <div class="card-body">
-                            <h3>Add a location</h3>
+                            <h3>2) Add a location</h3>
                             <p>In the locations section, name the location of your first image (e.g. Right Leg) and upload the image.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card vertical">
-                        <img class="card-img-top" src="/img/thigh-front.png" alt="List of location screens">
+                        <img class="card-img-top" src="/img/front/thigh-front.png" alt="List of location screens">
                         <div class="card-body">
-                            <h3>Record injections</h3>
+                            <h3>3) Record injections</h3>
                             <p>Choose the location you created and inject yourself, double click on the image in the place where you injected, rate the pain and add the site.</p>
                         </div>
                     </div>

@@ -1,9 +1,10 @@
-function fill() {
-  document.getElementById("bg-img").onclick = function (o) {
-    var c = o.target.getBoundingClientRect();
-    document.getElementById("x_coord").value = Math.round(o.clientX - c.left), document.getElementById("y_coord").value = Math.round(o.clientY - c.top), document.getElementById("qty").value = document.getElementById("qty_menu").value, document.getElementById("myModal").style.display = 'block';
-  };
-}
+$(function() {
+    $("#bg-img").click(function(o) { 
+      var c = o.target.getBoundingClientRect();
+      document.getElementById("x_coord").value = Math.round(o.clientX - c.left), document.getElementById("y_coord").value = Math.round(o.clientY - c.top), document.getElementById("qty").value = document.getElementById("qty_menu").value;
+      $("#myModal").modal("show");
+    });
+});
 
 function jk(site, text, noteid) {
 
@@ -19,7 +20,6 @@ function jk(site, text, noteid) {
     document.getElementById('form-update').style = 'display:hide;';
     document["form-create"].action = '/app/note/create/' + site;
   }
-  document.getElementById('myModal2').style = 'display:block;';
   document["delete"].action = '/app/site/' + site;
 }
 
