@@ -22,20 +22,14 @@ else
                 </form>
             </div>
             <div class="col-4">
-                <a href="#" 
-                class="btn btn-sm btn-danger float-right"
-                data-toggle="modal" 
-                data-target="#myModal3" role="button">Delete location</a>
+                <a href="#" class="btn btn-sm btn-danger float-right" data-toggle="modal" zdata-target="#myModal3" role="button">Delete location</a>
             </div>
         </div>
 
 
         <!-- location -->
         <div id="location" class="table-responsive">
-            <div class="alert alert-success" 
-                style="position:absolute; z-index:10"
-                onclick="this.style='display:none'"
-            >Double click to add a site</div>
+            <div class="alert alert-success" style="position:absolute; z-index:10" onclick="this.style='display:none'">Double click to add a site</div>
     @foreach ($sites as $site)
                 <div class="table">
                     <img src="{{$site->url}}" alt="Pic" id="bg-img" />
@@ -55,18 +49,18 @@ else
                 data-toggle="modal" data-target="#myModal2"
                 style="left:{{$site->x_coord-4}}px; top:{{$site->y_coord-45}}px;"
                 id="location{{$loop->index}}">
-                <img src="/img/logo.svg" alt="{{$site->updated_at}}">
-                <div class="count site{{$site->rating}}">
-                    <div class="count-no">
-                    {{ $loop->index+1 }}
-                    </div>
+            <img src="/img/logo.svg" alt="{{$site->updated_at}}">
+            <div class="count site{{$site->rating}}">
+                <div class="count-no">
+                {{ $loop->index+1 }}
                 </div>
+            </div>
     @if ( $site->note )
-                <i class="fa fa-comment comment-reveal">
-                    <div class="comment">
-                        {{ $site->note }}
-                    </div>
-                </i>
+            <i class="fa fa-comment comment-reveal">
+                <div class="comment">
+                    {{ $site->note }}
+                </div>
+            </i>
     @endif
             </div>
     @endforeach            
