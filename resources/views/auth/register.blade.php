@@ -42,6 +42,10 @@
                     </span>
 @enderror
                 </div>
+                <div class="mb-3 col-11">
+                    <label for="password_confirmation" class="form-label">Confirm password</label>
+                    <input name="password_confirmation" required type="password" class="form-control @error('password_confirmation') is-invalid @enderror" id="inputPassword2" placeholder="Confirm password">
+                </div>
                     <div class="mb-3">
                         <div class="col-6 float-right">
                             <button type="submit" class="btn btn-primary float-right">Register</button>

@@ -108,6 +108,13 @@ label {
   font-size:0.75rem;
 }
 
+h2.easy{
+  font-size:4rem;
+  .numbers{
+    font-size:2em;
+  }
+} 
+
 @media (max-width: 600px) {
   .container{
     padding: 0.25rem;
@@ -120,5 +127,10 @@ label {
     height: auto !important;
     padding: 0.5rem;
   }
-
+  h2.easy{
+    font-size:2.5rem;
+  }
+  #my-button{
+    width: 100%;
+  }
 }

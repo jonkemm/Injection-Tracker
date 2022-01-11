@@ -6,9 +6,6 @@
                 </button>
                 <div class="collapse navbar-collapse p-2" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="{{ route('features') }}">Features</a>
-                        <a class="nav-item nav-link" href="{{ route('howto') }}">How to</a>
-                        <a class="nav-item nav-link" href="{{ route('pricing') }}">Pricing</a>
                         <a class="nav-item nav-link" href="{{ route('contact') }}">Contact</a>
                     </div>
 @auth

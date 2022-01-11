@@ -47,7 +47,7 @@ else
                 class="site"
                 onclick = "jk({{$site->siteid }},'{{ $site->note }}','{{ $site->noteid }}')"
                 data-toggle="modal" data-target="#myModal2"
-                style="left:{{$site->x_coord-4}}px; top:{{$site->y_coord-45}}px;"
+                atyle="left:{{$site->x_coord-4}}px; top:{{$site->y_coord-45}}px;"
                 id="location{{$loop->index}}">
             <img src="/img/logo.svg" alt="{{$site->updated_at}}">
             <div class="count site{{$site->rating}}">

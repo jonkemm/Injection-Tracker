@@ -24,7 +24,7 @@ function jk(site, text, noteid) {
 }
 
 function showPwd() {
-    var x = document.getElementById("password");
+    var x = document.getElementById("inputPassword");
     if (x.type === "password") {
         x.type = "text";
     } else {

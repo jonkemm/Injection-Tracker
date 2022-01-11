@@ -11429,6 +11429,12 @@ textarea.form-control-lg {
   background-color: #dc4535;
 }
 
+@media (max-width: 600px) {
+  .view-delete * {
+    float: left;
+    clear: left;
+  }
+}
 .darkmode--activated .btn-google {
   color: #999;
   background-color: #212121;
@@ -11563,6 +11569,13 @@ label {
   font-size: 0.75rem;
 }
 
+h2.easy, .easy.h2 {
+  font-size: 4rem;
+}
+h2.easy .numbers, .easy.h2 .numbers {
+  font-size: 2em;
+}
+
 @media (max-width: 600px) {
   .container {
     padding: 0.25rem;
@@ -11577,10 +11590,22 @@ label {
     height: auto !important;
     padding: 0.5rem;
   }
+
+  h2.easy, .easy.h2 {
+    font-size: 2.5rem;
+  }
+
+  #my-button {
+    width: 100%;
+  }
 }
 body {
   background-color: #eee;
   color: #212121;
+}
+
+h1, .h1, h2, .h2, h3, .h3, .navbar-brand {
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 
 h1, .h1 {

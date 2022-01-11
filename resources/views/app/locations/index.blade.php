@@ -18,7 +18,7 @@
                     @endif
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 view-delete">
                 <a href="{{ route('location',$location->id) }}">
                     <button type="submit" style="float: right;" class="btn btn-lg btn-success">view</button>
                 </a>

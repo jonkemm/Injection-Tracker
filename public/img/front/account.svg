@@ -1,0 +1,11 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 381" width="800" height="381">
+	<title>account</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #77605a } 
+		.s1 { fill: none;stroke: #77605a;stroke-width: 25 } 
+	</style>
+	<path id="Shape 4" class="s0" d="m332 217c0 0 23.48 26.59 65 27c41.52 0.41 67-30 67-30c0 0 25.48-1.91 45 23c19.52 24.91 22 55 22 55c0 0-59.02 76.59-129 75c-69.98-1.59-136-79-136-79c0 0 1.98-37.41 29-59" />
+	<path id="Shape 1" class="s1" d="m400 366c-95.67 0-173-78.45-173-175.5c0-97.05 77.33-175.5 173-175.5c95.67 0 173 78.45 173 175.5c0 97.05-77.33 175.5-173 175.5z" />
+	<path id="Shape 2" class="s0" d="m398 226c-44.79 0-81-34.64-81-77.5c0-42.86 36.21-77.5 81-77.5c44.79 0 81 34.64 81 77.5c0 42.86-36.21 77.5-81 77.5z" />
+</svg>

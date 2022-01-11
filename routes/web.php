@@ -6,6 +6,7 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NoteController;
+use App\Http\Controllers\StatsController;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\DB;
 // use AlbertCht\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider;
@@ -41,6 +42,8 @@ Route::post('/about/contact', [ContactController::class, 'mailContactForm']);
 Route::get('/app/locations', [LocationController::class, 'index'])->name('locations');
 Route::get('/app/location/create', [LocationController::class, 'create']);
 Route::delete('/app/location/{id}', [LocationController::class, 'destroy']);
+
+Route::get('/app/stats/{id}', [StatsController::class, 'index'])->name('stats');
 
 Route::post('/app/uploadfile', [LocationController::class, 'post'])->name('upload');
 
