@@ -12,9 +12,9 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="card vertical mini">
-                            <i class="card-img-top"></i>
+                            <img class="card-img-top w-100" src="/img/front/comment.svg" alt="">
                             <div class="card-body">
-                                <h2>Quickly &amp; easily add injection sites</h2>
+                                <h2>Easily add injection sites with optional comments</h2>
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card vertical mini">
-                            <img class="card-img-top" src="/img/front/dart-board.svg" alt=""">
+                            <img class="card-img-top w-100" src="/img/front/dart-board.svg" alt=""">
                             <div class="card-body">
                                 <h2>A practice image with each account</h2>
                             </div>

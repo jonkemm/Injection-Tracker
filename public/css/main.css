@@ -11320,6 +11320,7 @@ textarea.form-control-lg {
   color: #666;
   height: 2rem;
   margin-top: 0rem;
+  width: 100%;
 }
 .card.mini h2, .card.mini .h2 {
   font-size: 0.6rem;
