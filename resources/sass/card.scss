@@ -26,3 +26,35 @@ height:25rem !important;
 .card-body.add-location {
   padding: 0;
 }
+
+.card.mini{
+  text-align:center;
+  height:6.5rem !important;
+  padding: 0.25rem;
+  .card-img-top{
+    font-size:2rem;
+    color:$grey;
+    height: 2rem;
+    margin-top: 0rem;
+  }
+  h2{ 
+    font-size:0.6rem;
+    font-weight: normal !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .card{
+    margin: 5%;
+  }
+  .card.mini{
+    height:9rem !important;
+    h2{ 
+      font-size: 1rem !important;
+    }
+  }
+  .card-img-top{
+    margin-left: -20%;
+    width: 140%;
+  }
+}

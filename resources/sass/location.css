@@ -125,3 +125,10 @@
 .site3 {
   background-color: #dc4535;
 }
+
+@media (max-width: 600px) {
+  .view-delete * {
+    float: left;
+    clear: left;
+  }
+}

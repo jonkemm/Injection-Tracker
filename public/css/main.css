@@ -11310,6 +11310,39 @@ textarea.form-control-lg {
   padding: 0;
 }
 
+.card.mini {
+  text-align: center;
+  height: 6.5rem !important;
+  padding: 0.25rem;
+}
+.card.mini .card-img-top {
+  font-size: 2rem;
+  color: #666;
+  height: 2rem;
+  margin-top: 0rem;
+}
+.card.mini h2, .card.mini .h2 {
+  font-size: 0.6rem;
+  font-weight: normal !important;
+}
+
+@media (max-width: 600px) {
+  .card {
+    margin: 5%;
+  }
+
+  .card.mini {
+    height: 9rem !important;
+  }
+  .card.mini h2, .card.mini .h2 {
+    font-size: 1rem !important;
+  }
+
+  .card-img-top {
+    margin-left: -20%;
+    width: 140%;
+  }
+}
 #location {
   width: 100%;
   position: relative;
@@ -11512,6 +11545,7 @@ label {
 
 .navbar-brand {
   margin-left: 1rem;
+  font-size: 1rem;
 }
 
 .subnav {
@@ -11578,12 +11612,12 @@ h2.easy .numbers, .easy.h2 .numbers {
 
 @media (max-width: 600px) {
   .container {
-    padding: 0.25rem;
+    padding: 0;
     border: 0;
   }
 
   main, .card * {
-    padding: 0.25rem !important;
+    padding: 0.75rem !important;
   }
 
   .card {
@@ -11593,6 +11627,10 @@ h2.easy .numbers, .easy.h2 .numbers {
 
   h2.easy, .easy.h2 {
     font-size: 2.5rem;
+    text-align: center;
+  }
+  h2.easy .numbers, .easy.h2 .numbers {
+    font-size: 1.5em;
   }
 
   #my-button {
@@ -11606,10 +11644,10 @@ body {
 
 h1, .h1, h2, .h2, h3, .h3, .navbar-brand {
   font-family: "Mochiy Pop P One", sans-serif;
+  color: #666;
 }
 
 h1, .h1 {
-  color: #999;
   font-size: 1.5rem;
 }
 
