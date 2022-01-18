@@ -10,6 +10,18 @@ use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
     
+    public function index()
+    {
+        if( Gate::denies('logged-in')){
+            return redirect('/login')->with('error','You must be logged in');
+        };
+
+        if( Gate::allows('is-admin')){
+            return view('admin.users.index', ['users'=>User::paginate(10) ]);
+        }
+        return redirect('/login')->with('error','You must be admih');
+    }
+    
     public function profile()
     {
         // if( Gate::denies('logged-in')){

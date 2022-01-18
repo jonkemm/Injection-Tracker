@@ -5,6 +5,7 @@
 <div class="container">
     <x-guest-layout>
         <div class="card">
+            <a href="{{ route('locations') }} "  class="btn btn-warning" id="my-button">View your locations</a>
             <label for="logout">Would you like to:</label>
             <a href="{{ route('logout') }}" id="logout" class="btn btn-sm btn-info" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 Logout

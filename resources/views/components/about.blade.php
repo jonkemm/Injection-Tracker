@@ -1,0 +1,4 @@
+
+                <h2>What a lovely story (developer ramblings)</h2>
+                <p>Not that tales involving chronic illnesses are often thought of as lovely, just an expression really... Not ready for a story and just want to get on with it? <a href="{{ route('register') }}">Click here to sign up</a></p>
+                <p>The developer of this web app has Multiple Sclerosis and has endured Rebif, Avonex and Copaxone. He has made his life a little easier by making a way to remove some of the thinking involved by making a website to help him track the locations of his injections via an app (like the cool kids do it these days, he says, and yes he'd love to think of himself as one bearing in mind you can be a cool kid at any age - a teacher for 15 years and not one student ever thought he was cool and he's fine with that because sometimes they admitted to learning cool things and enjoying themselves).</p>

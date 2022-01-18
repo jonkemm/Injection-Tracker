@@ -14,11 +14,8 @@
                     <img class="card-img-top" src="/img/front/account.svg" alt="Account icon">
                     <div class="card-body">
                         <h2>1) Sign up for free</h2>
-                        <p>Register with / log into the site or login with Google</p>
-                        <p>
-                            <a href="{{ route('register') }}" class="btn btn-primary w-100" role="button">Register</a>
-                            <a href="{{ route('login') }}" class="btn btn-secondary w-100" role="button">Login</a>
-                        </p>
+                        <p>Register with the site to start</p>
+                        <a href="{{ route('register') }}" class="btn btn-primary w-100" role="button">Register</a>
                     </div>
                 </div>
             </div>

@@ -28,19 +28,35 @@
             </div>
             <div class="col-sm-6">
                 <div class="card vertical">
-                    <a href="https://www.patreon.com/jonkemm" target="_blank"><img src="/img/front/patreon.svg" class="w-100" alt=""></a>
-                    <div class="card-body">
-                        <h2>This app is free to use</h2>
-                        <p>No tracking, no selling data, no adverts, nuffing.</p>
-                        <h2>Support this app</h2>
-                        <p>I'd just like enough for it to pay it's way, approx &pound;50 per year.</p>
-                    </div>
-                </div>  
+@include('components.price')
+                </div>
+            </div>
+            <div class="col-sm-12 row">
+                <h2>Ready?</h2>
+                @auth
+                <p><a href="{{ route('locations') }} "  class="btn btn-warning" id="my-button">View your locations</a></p>
+                @else
+                <div class="row mb-3">
+                    <p>
+                        <a href="{{route('register')}}" id="my-button1" class="btn btn-primary w-100 m-0">Register</a>
+                    </p>
+                </div>
+                @endauth
             </div>
             <div class="col-sm-12">
-                <h2>What a lovely story (developer ramblings)</h2>
-                <p>Not that tales involving chronic illnesses are often thought of as lovely, just an expression really... Not ready for a story and just want to get on with it? <a href="{{ route('register') }}">Click here to sign up</a></p>
-                <p>The developer of this web app has Multiple Sclerosis and has endured Rebif, Avonex and Copaxone. He has made his life a little easier by making a way to remove some of the thinking involved by making a website to help him track the locations of his injections via an app (like the cool kids do it these days, he says, and yes he'd love to think of himself as one bearing in mind you can be a cool kid at any age - a teacher for 15 years and not one student ever thought he was cool and he's fine with that because sometimes they admitted to learning cool things and enjoying themselves).</p>
+@include('components.about')
+            </div>
+            <div class="col-sm-12 row">
+                <h2>How about now?</h2>
+                @auth
+                <p><a href="{{ route('locations') }} "  class="btn btn-warning" id="my-button">View your locations</a></p>
+                @else
+                <div class="row mb-3">
+                    <p>
+                        <a href="{{route('register')}}" id="my-button1" class="btn btn-primary w-100 m-0">Register</a>
+                    </p>
+                </div>
+                @endauth
             </div>
         </div>
 </x-guest-layout>
